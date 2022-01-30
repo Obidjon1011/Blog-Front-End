@@ -1,0 +1,31 @@
+.btnCustom {
+  background-color: #FF7999 !important;
+}
+
+.btnCustom span:first-child{display: block !important;}
+
+.btnCustom span:last-child{display: none !important;}
+
+.App {
+  padding: 0 200px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px){
+  .btnCustom span:first-child {
+    display: none !important;
+  }
+
+  .btnCustom span:last-child{
+    display: block !important;
+  }
+
+  .btnCustom{border-radius: 50% !important;}
+
+  .App {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+  .App {padding: 0;}
+}
